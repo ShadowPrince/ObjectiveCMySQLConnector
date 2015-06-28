@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F31D6B2B1B4007AC0018C027 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F31D6B2A1B4007AC0018C027 /* AppDelegate.m */; };
+		F31D6B2D1B4007AC0018C027 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F31D6B2C1B4007AC0018C027 /* main.m */; };
+		F31D6B301B4007AC0018C027 /* CDSQL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F31D6B2E1B4007AC0018C027 /* CDSQL.xcdatamodeld */; };
+		F31D6B321B4007AC0018C027 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31D6B311B4007AC0018C027 /* Images.xcassets */; };
+		F31D6B351B4007AC0018C027 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31D6B331B4007AC0018C027 /* MainMenu.xib */; };
+		F31D6B411B4007AC0018C027 /* CDSQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F31D6B401B4007AC0018C027 /* CDSQLTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F31D6B3B1B4007AC0018C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F31D6B1C1B4007AC0018C027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F31D6B231B4007AC0018C027;
+			remoteInfo = CDSQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F31D6B241B4007AC0018C027 /* CDSQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDSQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31D6B281B4007AC0018C027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31D6B291B4007AC0018C027 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F31D6B2A1B4007AC0018C027 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F31D6B2C1B4007AC0018C027 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F31D6B2F1B4007AC0018C027 /* CDSQL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDSQL.xcdatamodel; sourceTree = "<group>"; };
+		F31D6B311B4007AC0018C027 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F31D6B341B4007AC0018C027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F31D6B3A1B4007AC0018C027 /* CDSQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDSQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31D6B3F1B4007AC0018C027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31D6B401B4007AC0018C027 /* CDSQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSQLTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F31D6B211B4007AC0018C027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D6B371B4007AC0018C027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F31D6B1B1B4007AC0018C027 = {
+			isa = PBXGroup;
+			children = (
+				F31D6B261B4007AC0018C027 /* CDSQL */,
+				F31D6B3D1B4007AC0018C027 /* CDSQLTests */,
+				F31D6B251B4007AC0018C027 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F31D6B251B4007AC0018C027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6B241B4007AC0018C027 /* CDSQL.app */,
+				F31D6B3A1B4007AC0018C027 /* CDSQLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F31D6B261B4007AC0018C027 /* CDSQL */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6B291B4007AC0018C027 /* AppDelegate.h */,
+				F31D6B2A1B4007AC0018C027 /* AppDelegate.m */,
+				F31D6B311B4007AC0018C027 /* Images.xcassets */,
+				F31D6B331B4007AC0018C027 /* MainMenu.xib */,
+				F31D6B2E1B4007AC0018C027 /* CDSQL.xcdatamodeld */,
+				F31D6B271B4007AC0018C027 /* Supporting Files */,
+			);
+			path = CDSQL;
+			sourceTree = "<group>";
+		};
+		F31D6B271B4007AC0018C027 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6B281B4007AC0018C027 /* Info.plist */,
+				F31D6B2C1B4007AC0018C027 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F31D6B3D1B4007AC0018C027 /* CDSQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6B401B4007AC0018C027 /* CDSQLTests.m */,
+				F31D6B3E1B4007AC0018C027 /* Supporting Files */,
+			);
+			path = CDSQLTests;
+			sourceTree = "<group>";
+		};
+		F31D6B3E1B4007AC0018C027 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6B3F1B4007AC0018C027 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F31D6B231B4007AC0018C027 /* CDSQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31D6B441B4007AC0018C027 /* Build configuration list for PBXNativeTarget "CDSQL" */;
+			buildPhases = (
+				F31D6B201B4007AC0018C027 /* Sources */,
+				F31D6B211B4007AC0018C027 /* Frameworks */,
+				F31D6B221B4007AC0018C027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDSQL;
+			productName = CDSQL;
+			productReference = F31D6B241B4007AC0018C027 /* CDSQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F31D6B391B4007AC0018C027 /* CDSQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31D6B471B4007AC0018C027 /* Build configuration list for PBXNativeTarget "CDSQLTests" */;
+			buildPhases = (
+				F31D6B361B4007AC0018C027 /* Sources */,
+				F31D6B371B4007AC0018C027 /* Frameworks */,
+				F31D6B381B4007AC0018C027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F31D6B3C1B4007AC0018C027 /* PBXTargetDependency */,
+			);
+			name = CDSQLTests;
+			productName = CDSQLTests;
+			productReference = F31D6B3A1B4007AC0018C027 /* CDSQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F31D6B1C1B4007AC0018C027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = shdwprince;
+				TargetAttributes = {
+					F31D6B231B4007AC0018C027 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F31D6B391B4007AC0018C027 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F31D6B231B4007AC0018C027;
+					};
+				};
+			};
+			buildConfigurationList = F31D6B1F1B4007AC0018C027 /* Build configuration list for PBXProject "CDSQL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F31D6B1B1B4007AC0018C027;
+			productRefGroup = F31D6B251B4007AC0018C027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F31D6B231B4007AC0018C027 /* CDSQL */,
+				F31D6B391B4007AC0018C027 /* CDSQLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F31D6B221B4007AC0018C027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31D6B321B4007AC0018C027 /* Images.xcassets in Resources */,
+				F31D6B351B4007AC0018C027 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D6B381B4007AC0018C027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F31D6B201B4007AC0018C027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31D6B2D1B4007AC0018C027 /* main.m in Sources */,
+				F31D6B2B1B4007AC0018C027 /* AppDelegate.m in Sources */,
+				F31D6B301B4007AC0018C027 /* CDSQL.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D6B361B4007AC0018C027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31D6B411B4007AC0018C027 /* CDSQLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F31D6B3C1B4007AC0018C027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F31D6B231B4007AC0018C027 /* CDSQL */;
+			targetProxy = F31D6B3B1B4007AC0018C027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F31D6B331B4007AC0018C027 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F31D6B341B4007AC0018C027 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F31D6B421B4007AC0018C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F31D6B431B4007AC0018C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F31D6B451B4007AC0018C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CDSQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F31D6B461B4007AC0018C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CDSQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F31D6B481B4007AC0018C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CDSQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDSQL.app/Contents/MacOS/CDSQL";
+			};
+			name = Debug;
+		};
+		F31D6B491B4007AC0018C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CDSQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDSQL.app/Contents/MacOS/CDSQL";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F31D6B1F1B4007AC0018C027 /* Build configuration list for PBXProject "CDSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D6B421B4007AC0018C027 /* Debug */,
+				F31D6B431B4007AC0018C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F31D6B441B4007AC0018C027 /* Build configuration list for PBXNativeTarget "CDSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D6B451B4007AC0018C027 /* Debug */,
+				F31D6B461B4007AC0018C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F31D6B471B4007AC0018C027 /* Build configuration list for PBXNativeTarget "CDSQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D6B481B4007AC0018C027 /* Debug */,
+				F31D6B491B4007AC0018C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F31D6B2E1B4007AC0018C027 /* CDSQL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F31D6B2F1B4007AC0018C027 /* CDSQL.xcdatamodel */,
+			);
+			currentVersion = F31D6B2F1B4007AC0018C027 /* CDSQL.xcdatamodel */;
+			path = CDSQL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F31D6B1C1B4007AC0018C027 /* Project object */;
+}
