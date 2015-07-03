@@ -74,13 +74,8 @@
     
     if (!shouldFail && !error) {
         [NSPersistentStoreCoordinator registerStoreClass:[MySQLStore class] forStoreType:@"MySQLStore"];
-        [NSPersistentStoreCoordinator registerStoreClass:[TestStore class] forStoreType:@"TestStore"];
-
-
 
         NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-        //NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"OSXCoreDataObjC.storedata"];
-        //NSURL *url = [NSURL fileURLWithPath:@"/Users/sp/1.mysql"];
 
         if (![coordinator addPersistentStoreWithType:@"MySQLStore" configuration:nil URL:nil options:nil error:&error]) {
             coordinator = nil;

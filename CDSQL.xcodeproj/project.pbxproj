@@ -18,7 +18,6 @@
 		F39E24C81B4282F000E4F0D1 /* MySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E24C71B4282F000E4F0D1 /* MySQLStore.m */; };
 		F39E250D1B43DDF800E4F0D1 /* MySQLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E250C1B43DDF800E4F0D1 /* MySQLConnection.m */; };
 		F39E25311B45386E00E4F0D1 /* libmysqlclient.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F39E25301B45386E00E4F0D1 /* libmysqlclient.18.dylib */; };
-		F39E25371B456A9F00E4F0D1 /* TestStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E25361B456A9F00E4F0D1 /* TestStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +51,6 @@
 		F39E250B1B43DDF800E4F0D1 /* MySQLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLConnection.h; sourceTree = "<group>"; };
 		F39E250C1B43DDF800E4F0D1 /* MySQLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLConnection.m; sourceTree = "<group>"; };
 		F39E25301B45386E00E4F0D1 /* libmysqlclient.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmysqlclient.18.dylib; path = ../../../../../usr/local/Cellar/mysql/5.6.25/lib/libmysqlclient.18.dylib; sourceTree = "<group>"; };
-		F39E25351B456A9F00E4F0D1 /* TestStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStore.h; sourceTree = "<group>"; };
-		F39E25361B456A9F00E4F0D1 /* TestStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +97,6 @@
 			children = (
 				F31D6B291B4007AC0018C027 /* AppDelegate.h */,
 				F31D6B2A1B4007AC0018C027 /* AppDelegate.m */,
-				F39E25351B456A9F00E4F0D1 /* TestStore.h */,
-				F39E25361B456A9F00E4F0D1 /* TestStore.m */,
 				F31D6B311B4007AC0018C027 /* Images.xcassets */,
 				F31D6B331B4007AC0018C027 /* MainMenu.xib */,
 				F31D6B2E1B4007AC0018C027 /* CDSQL.xcdatamodeld */,
@@ -257,7 +252,6 @@
 				F31D6B301B4007AC0018C027 /* CDSQL.xcdatamodeld in Sources */,
 				F398CEC61B46D73F0014DF33 /* MySQLResult.m in Sources */,
 				F39E24C81B4282F000E4F0D1 /* MySQLStore.m in Sources */,
-				F39E25371B456A9F00E4F0D1 /* TestStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
