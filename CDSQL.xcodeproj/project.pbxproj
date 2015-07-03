@@ -13,6 +13,12 @@
 		F31D6B321B4007AC0018C027 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31D6B311B4007AC0018C027 /* Images.xcassets */; };
 		F31D6B351B4007AC0018C027 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31D6B331B4007AC0018C027 /* MainMenu.xib */; };
 		F31D6B411B4007AC0018C027 /* CDSQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F31D6B401B4007AC0018C027 /* CDSQLTests.m */; };
+		F398CEC61B46D73F0014DF33 /* MySQLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F398CEC51B46D73F0014DF33 /* MySQLResult.m */; };
+		F398CEC91B46D7D20014DF33 /* MySQLRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F398CEC81B46D7D20014DF33 /* MySQLRow.m */; };
+		F39E24C81B4282F000E4F0D1 /* MySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E24C71B4282F000E4F0D1 /* MySQLStore.m */; };
+		F39E250D1B43DDF800E4F0D1 /* MySQLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E250C1B43DDF800E4F0D1 /* MySQLConnection.m */; };
+		F39E25311B45386E00E4F0D1 /* libmysqlclient.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F39E25301B45386E00E4F0D1 /* libmysqlclient.18.dylib */; };
+		F39E25371B456A9F00E4F0D1 /* TestStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E25361B456A9F00E4F0D1 /* TestStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,17 @@
 		F31D6B3A1B4007AC0018C027 /* CDSQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDSQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D6B3F1B4007AC0018C027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F31D6B401B4007AC0018C027 /* CDSQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSQLTests.m; sourceTree = "<group>"; };
+		F398CEC41B46D73F0014DF33 /* MySQLResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLResult.h; sourceTree = "<group>"; };
+		F398CEC51B46D73F0014DF33 /* MySQLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLResult.m; sourceTree = "<group>"; };
+		F398CEC71B46D7D20014DF33 /* MySQLRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLRow.h; sourceTree = "<group>"; };
+		F398CEC81B46D7D20014DF33 /* MySQLRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLRow.m; sourceTree = "<group>"; };
+		F39E24C61B4282F000E4F0D1 /* MySQLStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySQLStore.h; path = CDSQL/MySQLStore.h; sourceTree = "<group>"; };
+		F39E24C71B4282F000E4F0D1 /* MySQLStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySQLStore.m; path = CDSQL/MySQLStore.m; sourceTree = "<group>"; };
+		F39E250B1B43DDF800E4F0D1 /* MySQLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLConnection.h; sourceTree = "<group>"; };
+		F39E250C1B43DDF800E4F0D1 /* MySQLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLConnection.m; sourceTree = "<group>"; };
+		F39E25301B45386E00E4F0D1 /* libmysqlclient.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmysqlclient.18.dylib; path = ../../../../../usr/local/Cellar/mysql/5.6.25/lib/libmysqlclient.18.dylib; sourceTree = "<group>"; };
+		F39E25351B456A9F00E4F0D1 /* TestStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStore.h; sourceTree = "<group>"; };
+		F39E25361B456A9F00E4F0D1 /* TestStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39E25311B45386E00E4F0D1 /* libmysqlclient.18.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +78,8 @@
 		F31D6B1B1B4007AC0018C027 = {
 			isa = PBXGroup;
 			children = (
+				F39E25301B45386E00E4F0D1 /* libmysqlclient.18.dylib */,
+				F39E250E1B43DE0300E4F0D1 /* MySQL */,
 				F31D6B261B4007AC0018C027 /* CDSQL */,
 				F31D6B3D1B4007AC0018C027 /* CDSQLTests */,
 				F31D6B251B4007AC0018C027 /* Products */,
@@ -80,6 +100,8 @@
 			children = (
 				F31D6B291B4007AC0018C027 /* AppDelegate.h */,
 				F31D6B2A1B4007AC0018C027 /* AppDelegate.m */,
+				F39E25351B456A9F00E4F0D1 /* TestStore.h */,
+				F39E25361B456A9F00E4F0D1 /* TestStore.m */,
 				F31D6B311B4007AC0018C027 /* Images.xcassets */,
 				F31D6B331B4007AC0018C027 /* MainMenu.xib */,
 				F31D6B2E1B4007AC0018C027 /* CDSQL.xcdatamodeld */,
@@ -112,6 +134,21 @@
 				F31D6B3F1B4007AC0018C027 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F39E250E1B43DE0300E4F0D1 /* MySQL */ = {
+			isa = PBXGroup;
+			children = (
+				F398CEC71B46D7D20014DF33 /* MySQLRow.h */,
+				F398CEC81B46D7D20014DF33 /* MySQLRow.m */,
+				F398CEC41B46D73F0014DF33 /* MySQLResult.h */,
+				F398CEC51B46D73F0014DF33 /* MySQLResult.m */,
+				F39E250B1B43DDF800E4F0D1 /* MySQLConnection.h */,
+				F39E250C1B43DDF800E4F0D1 /* MySQLConnection.m */,
+				F39E24C61B4282F000E4F0D1 /* MySQLStore.h */,
+				F39E24C71B4282F000E4F0D1 /* MySQLStore.m */,
+			);
+			name = MySQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F31D6B2D1B4007AC0018C027 /* main.m in Sources */,
+				F398CEC91B46D7D20014DF33 /* MySQLRow.m in Sources */,
 				F31D6B2B1B4007AC0018C027 /* AppDelegate.m in Sources */,
+				F39E250D1B43DDF800E4F0D1 /* MySQLConnection.m in Sources */,
 				F31D6B301B4007AC0018C027 /* CDSQL.xcdatamodeld in Sources */,
+				F398CEC61B46D73F0014DF33 /* MySQLResult.m in Sources */,
+				F39E24C81B4282F000E4F0D1 /* MySQLStore.m in Sources */,
+				F39E25371B456A9F00E4F0D1 /* TestStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,22 +370,38 @@
 		F31D6B451B4007AC0018C027 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CDSQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/Cellar/mysql-connector-c/6.1.6/lib",
+					/usr/local/Cellar/mysql/5.6.25/lib,
+				);
+				OTHER_CFLAGS = "-L/usr/local/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include/**";
 			};
 			name = Debug;
 		};
 		F31D6B461B4007AC0018C027 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CDSQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/Cellar/mysql-connector-c/6.1.6/lib",
+					/usr/local/Cellar/mysql/5.6.25/lib,
+				);
+				OTHER_CFLAGS = "-L/usr/local/lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include/**";
 			};
 			name = Release;
 		};
@@ -402,6 +460,7 @@
 				F31D6B461B4007AC0018C027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F31D6B471B4007AC0018C027 /* Build configuration list for PBXNativeTarget "CDSQLTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +469,7 @@
 				F31D6B491B4007AC0018C027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

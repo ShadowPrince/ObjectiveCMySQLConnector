@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
 @property (weak) IBOutlet NSWindow *window;
 - (IBAction)saveAction:(id)sender;
 
@@ -19,6 +18,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    [self window].titleVisibility = NSWindowTitleHidden;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -73,9 +73,16 @@
     }
     
     if (!shouldFail && !error) {
+        [NSPersistentStoreCoordinator registerStoreClass:[MySQLStore class] forStoreType:@"MySQLStore"];
+        [NSPersistentStoreCoordinator registerStoreClass:[TestStore class] forStoreType:@"TestStore"];
+
+
+
         NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-        NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"OSXCoreDataObjC.storedata"];
-        if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
+        //NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"OSXCoreDataObjC.storedata"];
+        //NSURL *url = [NSURL fileURLWithPath:@"/Users/sp/1.mysql"];
+
+        if (![coordinator addPersistentStoreWithType:@"MySQLStore" configuration:nil URL:nil options:nil error:&error]) {
             coordinator = nil;
         }
         _persistentStoreCoordinator = coordinator;
@@ -100,7 +107,7 @@
     if (_managedObjectContext) {
         return _managedObjectContext;
     }
-    
+
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (!coordinator) {
         return nil;
@@ -118,9 +125,10 @@
     if (![[self managedObjectContext] commitEditing]) {
         NSLog(@"%@:%@ unable to commit editing before saving", [self class], NSStringFromSelector(_cmd));
     }
-    
+
     NSError *error = nil;
     if ([[self managedObjectContext] hasChanges] && ![[self managedObjectContext] save:&error]) {
+        NSLog(@"%@", error);
         [[NSApplication sharedApplication] presentError:error];
     }
 }

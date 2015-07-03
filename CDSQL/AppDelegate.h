@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MySQLStore.h"
+#import "TestStore.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
