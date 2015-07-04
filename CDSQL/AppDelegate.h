@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MySQLStore.h"
-#import "TestStore.h"
+#import "PopupController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+
+@property (readwrite, strong) PopupController *popupController;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

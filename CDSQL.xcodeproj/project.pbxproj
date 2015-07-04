@@ -13,8 +13,11 @@
 		F31D6B321B4007AC0018C027 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31D6B311B4007AC0018C027 /* Images.xcassets */; };
 		F31D6B351B4007AC0018C027 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31D6B331B4007AC0018C027 /* MainMenu.xib */; };
 		F31D6B411B4007AC0018C027 /* CDSQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F31D6B401B4007AC0018C027 /* CDSQLTests.m */; };
+		F34B80641B48201B0045FC71 /* Popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = F34B80631B48201B0045FC71 /* Popup.xib */; };
+		F34B80671B4821D40045FC71 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34B80661B4821D40045FC71 /* CustomTableView.m */; };
 		F398CEC61B46D73F0014DF33 /* MySQLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F398CEC51B46D73F0014DF33 /* MySQLResult.m */; };
 		F398CEC91B46D7D20014DF33 /* MySQLRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F398CEC81B46D7D20014DF33 /* MySQLRow.m */; };
+		F398CECC1B4707360014DF33 /* PopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = F398CECB1B4707360014DF33 /* PopupController.m */; };
 		F39E24C81B4282F000E4F0D1 /* MySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E24C71B4282F000E4F0D1 /* MySQLStore.m */; };
 		F39E250D1B43DDF800E4F0D1 /* MySQLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F39E250C1B43DDF800E4F0D1 /* MySQLConnection.m */; };
 		F39E25311B45386E00E4F0D1 /* libmysqlclient.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F39E25301B45386E00E4F0D1 /* libmysqlclient.18.dylib */; };
@@ -42,10 +45,15 @@
 		F31D6B3A1B4007AC0018C027 /* CDSQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDSQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31D6B3F1B4007AC0018C027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F31D6B401B4007AC0018C027 /* CDSQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSQLTests.m; sourceTree = "<group>"; };
+		F34B80631B48201B0045FC71 /* Popup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Popup.xib; sourceTree = "<group>"; };
+		F34B80651B4821D40045FC71 /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		F34B80661B4821D40045FC71 /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
 		F398CEC41B46D73F0014DF33 /* MySQLResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLResult.h; sourceTree = "<group>"; };
 		F398CEC51B46D73F0014DF33 /* MySQLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLResult.m; sourceTree = "<group>"; };
 		F398CEC71B46D7D20014DF33 /* MySQLRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLRow.h; sourceTree = "<group>"; };
 		F398CEC81B46D7D20014DF33 /* MySQLRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLRow.m; sourceTree = "<group>"; };
+		F398CECA1B4707360014DF33 /* PopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupController.h; sourceTree = "<group>"; };
+		F398CECB1B4707360014DF33 /* PopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupController.m; sourceTree = "<group>"; };
 		F39E24C61B4282F000E4F0D1 /* MySQLStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySQLStore.h; path = CDSQL/MySQLStore.h; sourceTree = "<group>"; };
 		F39E24C71B4282F000E4F0D1 /* MySQLStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySQLStore.m; path = CDSQL/MySQLStore.m; sourceTree = "<group>"; };
 		F39E250B1B43DDF800E4F0D1 /* MySQLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLConnection.h; sourceTree = "<group>"; };
@@ -98,8 +106,13 @@
 				F31D6B291B4007AC0018C027 /* AppDelegate.h */,
 				F31D6B2A1B4007AC0018C027 /* AppDelegate.m */,
 				F31D6B311B4007AC0018C027 /* Images.xcassets */,
+				F34B80651B4821D40045FC71 /* CustomTableView.h */,
+				F34B80661B4821D40045FC71 /* CustomTableView.m */,
+				F398CECA1B4707360014DF33 /* PopupController.h */,
+				F398CECB1B4707360014DF33 /* PopupController.m */,
 				F31D6B331B4007AC0018C027 /* MainMenu.xib */,
 				F31D6B2E1B4007AC0018C027 /* CDSQL.xcdatamodeld */,
+				F34B80631B48201B0045FC71 /* Popup.xib */,
 				F31D6B271B4007AC0018C027 /* Supporting Files */,
 			);
 			path = CDSQL;
@@ -226,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34B80641B48201B0045FC71 /* Popup.xib in Resources */,
 				F31D6B321B4007AC0018C027 /* Images.xcassets in Resources */,
 				F31D6B351B4007AC0018C027 /* MainMenu.xib in Resources */,
 			);
@@ -249,6 +263,8 @@
 				F398CEC91B46D7D20014DF33 /* MySQLRow.m in Sources */,
 				F31D6B2B1B4007AC0018C027 /* AppDelegate.m in Sources */,
 				F39E250D1B43DDF800E4F0D1 /* MySQLConnection.m in Sources */,
+				F398CECC1B4707360014DF33 /* PopupController.m in Sources */,
+				F34B80671B4821D40045FC71 /* CustomTableView.m in Sources */,
 				F31D6B301B4007AC0018C027 /* CDSQL.xcdatamodeld in Sources */,
 				F398CEC61B46D73F0014DF33 /* MySQLResult.m in Sources */,
 				F39E24C81B4282F000E4F0D1 /* MySQLStore.m in Sources */,
