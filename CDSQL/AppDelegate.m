@@ -11,7 +11,6 @@
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *window;
 - (IBAction)saveAction:(id)sender;
-- (IBAction)showPopup:(id)sender;
 
 @end
 
@@ -113,12 +112,6 @@
 
     return _managedObjectContext;
 }
-
-- (IBAction)showPopup:(id)sender {
-    NSLog(@"foobar");
-    self.popupController = [[PopupController alloc] init];
-}
-
 
 #pragma mark - Core Data Saving and Undo support
 
